@@ -1,0 +1,65 @@
+
+body {
+    background-color: #f0f9ff;
+
+}
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+button {
+    float: left;
+    margin-top: 12%;
+    margin-left:4%;
+    background-color: #FF6347;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: none;
+}
+.card {
+    width: 12%;
+    background-color: #A6193C;
+    padding-bottom: 12%;
+    margin: 4%;
+    float: left;
+    border-radius:8.0%;
+    /* new stuff */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+
+
+.flip {
+    transform: rotateY(180deg);
+    /* background: url("rszcat.jpg"); */
+
+}
+#counter {
+    width: 12%;
+    /* padding-bottom: 12%; */
+    margin: 4%;
+    float: left;
+    background-color: rgba(0,0,0,0);
+    text-align: center; 
+/
+
+}
+#counterNumber{
+    font-size: 3em;
+    font-family: Impact, fantasy;
+    color:#A6193C;
+    position: relative;
+}
+#bestScore{
+    float: right;
+    margin-top: 12%;
+    font-size: 1em;
+    font-family: Impact, fantasy;
+    color:#A6193C;
+    margin-right: 4%;
+}
+#bestScoreLabel{
+    width: 12%;
+    
+}

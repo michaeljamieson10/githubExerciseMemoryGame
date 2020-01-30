@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="memoryGame.css">
+</head>
+<body>
+<!-- User should be able to start a new game.
+Clicking a card should reveal what’s underneath it. 
+The game should keep track and display the 
+number of times cards have been turned over.
+Users should only be able to see at most two cards at a time.
+Clicking on two matching cards should be a “match” — 
+those cards should stay face up.
+(Make sure this works only if you click on two different cards
+— clicking the same card twice shouldn’t count as a match!)
+When clicking two cards that are not a match, 
+they should stay turned over for at least 1 second 
+before they flip over again
+Store the lowest-scoring game in local storage, so that players can see a record of the best game played. -->
+
+<div class="container">
+    <div class="card" data-imgsrc="pokemon.gif">
+        <!-- <img src="cat.jpg"> -->
+    </div>
+    <div class="card" data-imgsrc="pokemon.gif"></div>
+    <div class="card" data-imgsrc="armlessman.gif"></div>
+    <div class="card" data-imgsrc="armlessman.gif"></div>
+    <div class="card" data-imgsrc="greedycat.webp"></div>
+    <!-- // s -->
+    <div class="card" data-imgsrc="greedycat.webp"></div>
+    <div class="card" data-imgsrc="tina.webp"></div>
+    <div class="card" data-imgsrc="tina.webp"></div>
+    <div class="card" data-imgsrc="shovelgirl.webp"></div>
+    <div class="card" data-imgsrc="shovelgirl.webp"></div>
+    <!-- // -->
+    <div class="card" data-imgsrc="lightning.webp"></div>
+    <div class="card" data-imgsrc="lightning.webp"></div>
+    <div  id="counter">
+        <span id="counterNumber"></span>
+    </div>
+    <div class="card" data-imgsrc="slothsmile.webp"></div>
+    <div class="card" data-imgsrc="slothsmile.webp"></div>
+    <!--  -->
+    <div class="card" data-imgsrc="evilpuppy.webp"></div>
+    <div class="card" data-imgsrc="evilpuppy.webp"></div>
+    <div class="card" data-imgsrc="finishhim.webp"></div>
+    <div class="card" data-imgsrc="finishhim.webp"></div>
+    <div class="card" data-imgsrc="gorillacode.gif"></div>
+    <!--  -->
+    <div class="card" data-imgsrc="gorillacode.gif"></div>
+    <div class="card" data-imgsrc="pandacoding.webp"></div>
+    <div class="card" data-imgsrc="pandacoding.webp"></div>
+    <div class="card" data-imgsrc="catholdingtree.webp"></div>
+    <div class="card" data-imgsrc="catholdingtree.webp"></div>
+    
+</div>
+<div class="container">
+    <button id="newGameButton">NEW GAME</button> 
+    <div id="bestScore">Best score:   <span id="bestScoreLabel">  </span></div>
+</div>
+
+
+    <script src="memoryGame.js"></script>
+</body>
+</html>
